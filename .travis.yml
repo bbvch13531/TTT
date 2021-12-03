@@ -3,3 +3,7 @@ osx_image: xcode13.1
 xcode_project: TTT-TestTestingThings.xcodeproj 
 xcode_scheme: TTT-TestTestingThings
 xcode_destination: platform=iOS Simulator,OS=15.0,name=iPhone 13
+
+branches:
+    only:
+       - main

@@ -50,38 +50,4 @@ class NetworkHandler {
                 }
             }
     }
-    
-    class func requestContents(library: String, completion: @escaping (Result<[ContentDataModel], Error>) -> Void) {
-        let defaultSession = URLSession(configuration: .default)
-        guard var urlComponent = URLComponents(string: "https://staging-api.blimp.space/series?library=" + library),
-        let url = urlComponent.url else {
-            completion(.failure(NetworkError.WrongURL))
-              return
-        }
-        var urlRequest = URLRequest(url: url)
-        urlRequest.addValue(ApplicationKey.apiKey, forHTTPHeaderField: HeaderField.authorization)
-        urlRequest.addValue(ApplicationKey.pVersion, forHTTPHeaderField: HeaderField.pVersion)
-        urlRequest.addValue(ApplicationKey.pVendor, forHTTPHeaderField: HeaderField.pVendor)
-        urlRequest.addValue(ApplicationKey.pPlatform, forHTTPHeaderField: HeaderField.pPlatform)
-        let dataTask = defaultSession.dataTask(with: urlRequest) { data, response, error in
-            if let e = error {
-                completion(.failure(e))
-                return
-            }
-            
-            guard let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completion(.failure(NetworkError.InvalidResponse))
-                return
-            }
-            
-            let decoder = JSONDecoder()
-            
-            guard let decodedData = try? decoder.decode([ContentDataModel].self, from: data) else {
-                completion(.failure(NetworkError.JSONParseError))
-                return
-            }
-            completion(.success(decodedData))
-        }
-        dataTask.resume()
-    }
 }

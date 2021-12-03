@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		9FBCA5432759DE3A00D05A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5422759DE3A00D05A44 /* AppDelegate.swift */; };
 		9FBCA5452759DE3A00D05A44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5442759DE3A00D05A44 /* SceneDelegate.swift */; };
-		9FBCA5472759DE3A00D05A44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5462759DE3A00D05A44 /* ViewController.swift */; };
+		9FBCA5472759DE3A00D05A44 /* TTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5462759DE3A00D05A44 /* TTTViewController.swift */; };
 		9FBCA54A2759DE3A00D05A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBCA5482759DE3A00D05A44 /* Main.storyboard */; };
 		9FBCA54C2759DE4700D05A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBCA54B2759DE4700D05A44 /* Assets.xcassets */; };
 		9FBCA54F2759DE4700D05A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBCA54D2759DE4700D05A44 /* LaunchScreen.storyboard */; };
 		9FBCA55A2759DE4800D05A44 /* TTT_TestTestingThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5592759DE4800D05A44 /* TTT_TestTestingThingsTests.swift */; };
 		9FBCA5742759DECF00D05A44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5732759DECF00D05A44 /* Alamofire */; };
-		9FBCA5772759DF0D00D05A44 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5762759DF0D00D05A44 /* Nimble */; };
-		9FBCA57A2759DF1E00D05A44 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5792759DF1E00D05A44 /* Quick */; };
 		9FBCA582275A01A300D05A44 /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA581275A01A300D05A44 /* ResponseDataModel.swift */; };
 		9FBCA584275A01B200D05A44 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA583275A01B200D05A44 /* NetworkHandler.swift */; };
 		9FBCA586275A01C700D05A44 /* NetworkElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA585275A01C700D05A44 /* NetworkElements.swift */; };
+		9FBCA589275A058300D05A44 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA588275A058300D05A44 /* Quick */; };
+		9FBCA58B275A058D00D05A44 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA58A275A058D00D05A44 /* Nimble */; };
+		9FBCA58D275A060600D05A44 /* TTTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA58C275A060600D05A44 /* TTTViewModel.swift */; };
+		9FBCA592275A375100D05A44 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA591275A375100D05A44 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 		9FBCA53F2759DE3A00D05A44 /* TTT-TestTestingThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTT-TestTestingThings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBCA5422759DE3A00D05A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FBCA5442759DE3A00D05A44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FBCA5462759DE3A00D05A44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FBCA5462759DE3A00D05A44 /* TTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTViewController.swift; sourceTree = "<group>"; };
 		9FBCA5492759DE3A00D05A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FBCA54B2759DE4700D05A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FBCA54E2759DE4700D05A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		9FBCA581275A01A300D05A44 /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
 		9FBCA583275A01B200D05A44 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		9FBCA585275A01C700D05A44 /* NetworkElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkElements.swift; sourceTree = "<group>"; };
+		9FBCA58C275A060600D05A44 /* TTTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTViewModel.swift; sourceTree = "<group>"; };
+		9FBCA591275A375100D05A44 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FBCA57A2759DF1E00D05A44 /* Quick in Frameworks */,
 				9FBCA5742759DECF00D05A44 /* Alamofire in Frameworks */,
-				9FBCA5772759DF0D00D05A44 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBCA589275A058300D05A44 /* Quick in Frameworks */,
+				9FBCA58B275A058D00D05A44 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +79,7 @@
 				9FBCA5412759DE3A00D05A44 /* TTT-TestTestingThings */,
 				9FBCA5582759DE4700D05A44 /* TTT-TestTestingThingsTests */,
 				9FBCA5402759DE3A00D05A44 /* Products */,
+				9FBCA587275A058300D05A44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +97,9 @@
 			children = (
 				9FBCA5422759DE3A00D05A44 /* AppDelegate.swift */,
 				9FBCA5442759DE3A00D05A44 /* SceneDelegate.swift */,
-				9FBCA5462759DE3A00D05A44 /* ViewController.swift */,
+				9FBCA591275A375100D05A44 /* MainTabBarController.swift */,
+				9FBCA5462759DE3A00D05A44 /* TTTViewController.swift */,
+				9FBCA58C275A060600D05A44 /* TTTViewModel.swift */,
 				9FBCA581275A01A300D05A44 /* ResponseDataModel.swift */,
 				9FBCA583275A01B200D05A44 /* NetworkHandler.swift */,
 				9FBCA585275A01C700D05A44 /* NetworkElements.swift */,
@@ -110,6 +117,13 @@
 				9FBCA5592759DE4800D05A44 /* TTT_TestTestingThingsTests.swift */,
 			);
 			path = "TTT-TestTestingThingsTests";
+			sourceTree = "<group>";
+		};
+		9FBCA587275A058300D05A44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +144,6 @@
 			name = "TTT-TestTestingThings";
 			packageProductDependencies = (
 				9FBCA5732759DECF00D05A44 /* Alamofire */,
-				9FBCA5762759DF0D00D05A44 /* Nimble */,
-				9FBCA5792759DF1E00D05A44 /* Quick */,
 			);
 			productName = "TTT-TestTestingThings";
 			productReference = 9FBCA53F2759DE3A00D05A44 /* TTT-TestTestingThings.app */;
@@ -151,6 +163,10 @@
 				9FBCA5572759DE4700D05A44 /* PBXTargetDependency */,
 			);
 			name = "TTT-TestTestingThingsTests";
+			packageProductDependencies = (
+				9FBCA588275A058300D05A44 /* Quick */,
+				9FBCA58A275A058D00D05A44 /* Nimble */,
+			);
 			productName = "TTT-TestTestingThingsTests";
 			productReference = 9FBCA5552759DE4700D05A44 /* TTT-TestTestingThingsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -224,7 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FBCA582275A01A300D05A44 /* ResponseDataModel.swift in Sources */,
-				9FBCA5472759DE3A00D05A44 /* ViewController.swift in Sources */,
+				9FBCA5472759DE3A00D05A44 /* TTTViewController.swift in Sources */,
+				9FBCA592275A375100D05A44 /* MainTabBarController.swift in Sources */,
+				9FBCA58D275A060600D05A44 /* TTTViewModel.swift in Sources */,
 				9FBCA5432759DE3A00D05A44 /* AppDelegate.swift in Sources */,
 				9FBCA584275A01B200D05A44 /* NetworkHandler.swift in Sources */,
 				9FBCA5452759DE3A00D05A44 /* SceneDelegate.swift in Sources */,
@@ -307,6 +325,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -368,6 +387,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -559,15 +579,15 @@
 			package = 9FBCA5722759DECF00D05A44 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		9FBCA5762759DF0D00D05A44 /* Nimble */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9FBCA5752759DF0D00D05A44 /* XCRemoteSwiftPackageReference "Nimble" */;
-			productName = Nimble;
-		};
-		9FBCA5792759DF1E00D05A44 /* Quick */ = {
+		9FBCA588275A058300D05A44 /* Quick */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9FBCA5782759DF1E00D05A44 /* XCRemoteSwiftPackageReference "Quick" */;
 			productName = Quick;
+		};
+		9FBCA58A275A058D00D05A44 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FBCA5752759DF0D00D05A44 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
