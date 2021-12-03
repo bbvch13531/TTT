@@ -2,5 +2,4 @@ language: objective-c
 osx_image: xcode13.0
 xcode_project: TTT-TestTestingThings.xcodeproj 
 xcode_scheme: TTT-TestTestingThings
-xcode_sdk: iphonesimulator14.7 
-
+xcode_sdk: iphonesimulator15.0
