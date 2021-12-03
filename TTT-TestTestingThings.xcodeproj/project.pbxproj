@@ -14,22 +14,16 @@
 		9FBCA54C2759DE4700D05A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBCA54B2759DE4700D05A44 /* Assets.xcassets */; };
 		9FBCA54F2759DE4700D05A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBCA54D2759DE4700D05A44 /* LaunchScreen.storyboard */; };
 		9FBCA55A2759DE4800D05A44 /* TTT_TestTestingThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5592759DE4800D05A44 /* TTT_TestTestingThingsTests.swift */; };
-		9FBCA5642759DE4800D05A44 /* TTT_TestTestingThingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5632759DE4800D05A44 /* TTT_TestTestingThingsUITests.swift */; };
-		9FBCA5662759DE4800D05A44 /* TTT_TestTestingThingsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5652759DE4800D05A44 /* TTT_TestTestingThingsUITestsLaunchTests.swift */; };
 		9FBCA5742759DECF00D05A44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5732759DECF00D05A44 /* Alamofire */; };
 		9FBCA5772759DF0D00D05A44 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5762759DF0D00D05A44 /* Nimble */; };
 		9FBCA57A2759DF1E00D05A44 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5792759DF1E00D05A44 /* Quick */; };
+		9FBCA57C2759EB7400D05A44 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA57B2759EB7400D05A44 /* NetworkHandler.swift */; };
+		9FBCA57E2759EB8D00D05A44 /* NetworkElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA57D2759EB8D00D05A44 /* NetworkElements.swift */; };
+		9FBCA5802759EBAB00D05A44 /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA57F2759EBAB00D05A44 /* ResponseDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9FBCA5562759DE4700D05A44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9FBCA5372759DE3A00D05A44 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FBCA53E2759DE3A00D05A44;
-			remoteInfo = "TTT-TestTestingThings";
-		};
-		9FBCA5602759DE4800D05A44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FBCA5372759DE3A00D05A44 /* Project object */;
 			proxyType = 1;
@@ -49,9 +43,9 @@
 		9FBCA5502759DE4700D05A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FBCA5552759DE4700D05A44 /* TTT-TestTestingThingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTT-TestTestingThingsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBCA5592759DE4800D05A44 /* TTT_TestTestingThingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTT_TestTestingThingsTests.swift; sourceTree = "<group>"; };
-		9FBCA55F2759DE4800D05A44 /* TTT-TestTestingThingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTT-TestTestingThingsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FBCA5632759DE4800D05A44 /* TTT_TestTestingThingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTT_TestTestingThingsUITests.swift; sourceTree = "<group>"; };
-		9FBCA5652759DE4800D05A44 /* TTT_TestTestingThingsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTT_TestTestingThingsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FBCA57B2759EB7400D05A44 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		9FBCA57D2759EB8D00D05A44 /* NetworkElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkElements.swift; sourceTree = "<group>"; };
+		9FBCA57F2759EBAB00D05A44 /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FBCA55C2759DE4800D05A44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +74,6 @@
 			children = (
 				9FBCA5412759DE3A00D05A44 /* TTT-TestTestingThings */,
 				9FBCA5582759DE4700D05A44 /* TTT-TestTestingThingsTests */,
-				9FBCA5622759DE4800D05A44 /* TTT-TestTestingThingsUITests */,
 				9FBCA5402759DE3A00D05A44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +83,6 @@
 			children = (
 				9FBCA53F2759DE3A00D05A44 /* TTT-TestTestingThings.app */,
 				9FBCA5552759DE4700D05A44 /* TTT-TestTestingThingsTests.xctest */,
-				9FBCA55F2759DE4800D05A44 /* TTT-TestTestingThingsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +93,9 @@
 				9FBCA5422759DE3A00D05A44 /* AppDelegate.swift */,
 				9FBCA5442759DE3A00D05A44 /* SceneDelegate.swift */,
 				9FBCA5462759DE3A00D05A44 /* ViewController.swift */,
+				9FBCA57B2759EB7400D05A44 /* NetworkHandler.swift */,
+				9FBCA57D2759EB8D00D05A44 /* NetworkElements.swift */,
+				9FBCA57F2759EBAB00D05A44 /* ResponseDataModel.swift */,
 				9FBCA5482759DE3A00D05A44 /* Main.storyboard */,
 				9FBCA54B2759DE4700D05A44 /* Assets.xcassets */,
 				9FBCA54D2759DE4700D05A44 /* LaunchScreen.storyboard */,
@@ -122,15 +110,6 @@
 				9FBCA5592759DE4800D05A44 /* TTT_TestTestingThingsTests.swift */,
 			);
 			path = "TTT-TestTestingThingsTests";
-			sourceTree = "<group>";
-		};
-		9FBCA5622759DE4800D05A44 /* TTT-TestTestingThingsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9FBCA5632759DE4800D05A44 /* TTT_TestTestingThingsUITests.swift */,
-				9FBCA5652759DE4800D05A44 /* TTT_TestTestingThingsUITestsLaunchTests.swift */,
-			);
-			path = "TTT-TestTestingThingsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,24 +155,6 @@
 			productReference = 9FBCA5552759DE4700D05A44 /* TTT-TestTestingThingsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9FBCA55E2759DE4800D05A44 /* TTT-TestTestingThingsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9FBCA56F2759DE4800D05A44 /* Build configuration list for PBXNativeTarget "TTT-TestTestingThingsUITests" */;
-			buildPhases = (
-				9FBCA55B2759DE4800D05A44 /* Sources */,
-				9FBCA55C2759DE4800D05A44 /* Frameworks */,
-				9FBCA55D2759DE4800D05A44 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9FBCA5612759DE4800D05A44 /* PBXTargetDependency */,
-			);
-			name = "TTT-TestTestingThingsUITests";
-			productName = "TTT-TestTestingThingsUITests";
-			productReference = 9FBCA55F2759DE4800D05A44 /* TTT-TestTestingThingsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,10 +169,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					9FBCA5542759DE4700D05A44 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 9FBCA53E2759DE3A00D05A44;
-					};
-					9FBCA55E2759DE4800D05A44 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 9FBCA53E2759DE3A00D05A44;
 					};
@@ -237,7 +194,6 @@
 			targets = (
 				9FBCA53E2759DE3A00D05A44 /* TTT-TestTestingThings */,
 				9FBCA5542759DE4700D05A44 /* TTT-TestTestingThingsTests */,
-				9FBCA55E2759DE4800D05A44 /* TTT-TestTestingThingsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,13 +216,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FBCA55D2759DE4800D05A44 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,9 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBCA57E2759EB8D00D05A44 /* NetworkElements.swift in Sources */,
 				9FBCA5472759DE3A00D05A44 /* ViewController.swift in Sources */,
+				9FBCA5802759EBAB00D05A44 /* ResponseDataModel.swift in Sources */,
 				9FBCA5432759DE3A00D05A44 /* AppDelegate.swift in Sources */,
 				9FBCA5452759DE3A00D05A44 /* SceneDelegate.swift in Sources */,
+				9FBCA57C2759EB7400D05A44 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,15 +240,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FBCA55B2759DE4800D05A44 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FBCA5642759DE4800D05A44 /* TTT_TestTestingThingsUITests.swift in Sources */,
-				9FBCA5662759DE4800D05A44 /* TTT_TestTestingThingsUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,11 +247,6 @@
 			isa = PBXTargetDependency;
 			target = 9FBCA53E2759DE3A00D05A44 /* TTT-TestTestingThings */;
 			targetProxy = 9FBCA5562759DE4700D05A44 /* PBXContainerItemProxy */;
-		};
-		9FBCA5612759DE4800D05A44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9FBCA53E2759DE3A00D05A44 /* TTT-TestTestingThings */;
-			targetProxy = 9FBCA5602759DE4800D05A44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,6 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZMC86H7GX;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TTT-TestTestingThings/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -484,6 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZMC86H7GX;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TTT-TestTestingThings/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -554,52 +494,6 @@
 			};
 			name = Release;
 		};
-		9FBCA5702759DE4800D05A44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8ZMC86H7GX;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bbvch13531.TTT-TestTestingThingsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "TTT-TestTestingThings";
-			};
-			name = Debug;
-		};
-		9FBCA5712759DE4800D05A44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8ZMC86H7GX;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bbvch13531.TTT-TestTestingThingsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "TTT-TestTestingThings";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -626,15 +520,6 @@
 			buildConfigurations = (
 				9FBCA56D2759DE4800D05A44 /* Debug */,
 				9FBCA56E2759DE4800D05A44 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9FBCA56F2759DE4800D05A44 /* Build configuration list for PBXNativeTarget "TTT-TestTestingThingsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9FBCA5702759DE4800D05A44 /* Debug */,
-				9FBCA5712759DE4800D05A44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
