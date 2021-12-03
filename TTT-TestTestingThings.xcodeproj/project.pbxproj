@@ -16,6 +16,9 @@
 		9FBCA55A2759DE4800D05A44 /* TTT_TestTestingThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5592759DE4800D05A44 /* TTT_TestTestingThingsTests.swift */; };
 		9FBCA5642759DE4800D05A44 /* TTT_TestTestingThingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5632759DE4800D05A44 /* TTT_TestTestingThingsUITests.swift */; };
 		9FBCA5662759DE4800D05A44 /* TTT_TestTestingThingsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA5652759DE4800D05A44 /* TTT_TestTestingThingsUITestsLaunchTests.swift */; };
+		9FBCA5742759DECF00D05A44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5732759DECF00D05A44 /* Alamofire */; };
+		9FBCA5772759DF0D00D05A44 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5762759DF0D00D05A44 /* Nimble */; };
+		9FBCA57A2759DF1E00D05A44 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 9FBCA5792759DF1E00D05A44 /* Quick */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBCA57A2759DF1E00D05A44 /* Quick in Frameworks */,
+				9FBCA5742759DECF00D05A44 /* Alamofire in Frameworks */,
+				9FBCA5772759DF0D00D05A44 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +149,11 @@
 			dependencies = (
 			);
 			name = "TTT-TestTestingThings";
+			packageProductDependencies = (
+				9FBCA5732759DECF00D05A44 /* Alamofire */,
+				9FBCA5762759DF0D00D05A44 /* Nimble */,
+				9FBCA5792759DF1E00D05A44 /* Quick */,
+			);
 			productName = "TTT-TestTestingThings";
 			productReference = 9FBCA53F2759DE3A00D05A44 /* TTT-TestTestingThings.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,11 @@
 				Base,
 			);
 			mainGroup = 9FBCA5362759DE3A00D05A44;
+			packageReferences = (
+				9FBCA5722759DECF00D05A44 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9FBCA5752759DF0D00D05A44 /* XCRemoteSwiftPackageReference "Nimble" */,
+				9FBCA5782759DF1E00D05A44 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = 9FBCA5402759DE3A00D05A44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -624,6 +640,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FBCA5722759DECF00D05A44 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		9FBCA5752759DF0D00D05A44 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		9FBCA5782759DF1E00D05A44 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FBCA5732759DECF00D05A44 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FBCA5722759DECF00D05A44 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9FBCA5762759DF0D00D05A44 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FBCA5752759DF0D00D05A44 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		9FBCA5792759DF1E00D05A44 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FBCA5782759DF1E00D05A44 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FBCA5372759DE3A00D05A44 /* Project object */;
 }
