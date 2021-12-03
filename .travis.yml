@@ -2,5 +2,5 @@ language: objective-c
 osx_image: xcode13.1
 xcode_project: TTT-TestTestingThings.xcodeproj 
 xcode_scheme: TTT-TestTestingThings
-xcode_sdk: iphonesimulator15.0
-# platform: iOS Simulator,OS=14.5,name=iPhone X
+xcode_sdk: iphonesimulator14.5
+xcode_destination: platform=iOS Simulator,OS=14.5,name=iPhone X
